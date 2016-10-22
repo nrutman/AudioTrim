@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="audiotrim" ng-strict-di>
     <head>
         <title>AudioTrim</title>
+
+        <!-- Libraries -->
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="libs/angular-ui-router.min.js"></script>
+
+        <!-- App Scripts -->
+        <link rel="stylesheet" href="dist/css/app.css">
+        <script src="dist/js/app.min.js"></script>
     </head>
-    <body>
+    <body ng-controller="HelloWorldCtrl as helloWorld">
         <h1>Hello world.</h1>
+        <p ng-bind="helloWorld.foo"></p>
     </body>
 </html>

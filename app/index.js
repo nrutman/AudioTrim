@@ -7,6 +7,7 @@ function createWindow() {
     win.on('closed', () => {
         win = null;
     });
+    win.toggleDevTools();
 }
 
 // create window when app starts
