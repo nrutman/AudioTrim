@@ -1,7 +1,6 @@
 {
   "scripts": {
     "rebuild": "electron-rebuild -f -w index.js",
-    "prestart": "npm install",
     "start": "electron index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

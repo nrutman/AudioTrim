@@ -13,11 +13,7 @@ function createWindow() {
 app.on('ready', createWindow);
 
 // kill process when all windows are closed
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
-        app.quit();
-    }
-});
+app.on('window-all-closed', app.quit);
 
 // create window if app is activated (i.e. clicking on dock icon in OSX)
 app.on('activate', () => {
