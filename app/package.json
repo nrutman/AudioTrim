@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "rebuild": "electron-rebuild -f -w index.js",
+    "prestart": "npm install",
+    "start": "electron index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathan Rutman",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.4.4",
+    "electron-rebuild": "^1.3.0"
+  }
+}
